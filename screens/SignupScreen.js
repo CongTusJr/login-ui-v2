@@ -72,7 +72,10 @@ const SignupScreen = () => {
             entering={FadeInDown.delay(600).duration(1000).springify()}
             className="w-full"
           >
-            <TouchableOpacity className="w-full bg-[#FFB6C1] p-3 rounded-2xl mb-3">
+            <TouchableOpacity
+              className="w-full bg-[#FFB6C1] p-3 rounded-2xl mb-3"
+              onPress={() => navigation.push("Login")}
+            >
               <Text className="text-xl font-bold text-white text-center">
                 SignUp
               </Text>
